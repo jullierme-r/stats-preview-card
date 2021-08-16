@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://jullierme-r.github.io/sumary-component/)
+- Solution URL: [Add solution URL here](https://jullierme-r.github.io/stats-preview-card/)
 
 
 ### Built with
