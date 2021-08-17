@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/mobile.png)
-![](./images/desktop.png)
+![](./mobile.png)
+![](./desktop.png)
 
 ### Links
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ## Author
 
-- GitHub - [Add your name here](https://github.com/jullierme-r)
+- GitHub - [jullierme-r](https://github.com/jullierme-r)
 - Frontend Mentor - [@jullierme-r](https://www.frontendmentor.io/profile/jullierme-r)
 
 ### What I learned
