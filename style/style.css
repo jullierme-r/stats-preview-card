@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 :root {
@@ -11,20 +12,16 @@
     --accent: #aa5cdb;
 
     /*neutral*/
-    --heading: #ffffff;
+    --heading: #fff;
     --mainP: #ffffffbf;
     --statH: #ffffff99;
 }
 
-html {
-	font-size: 62.5%; 
-    color: var(--heading);
-}
-
 body {
     background-color: var(--mainBg);
-    font-size: 1.5rem;
-    
+    color: var(--heading);
+    font-size: 0.9375rem;
+    padding: 1rem;    
 }
 
 .container {
@@ -37,12 +34,12 @@ body {
 
 .image {
     background-color: var(--accent);
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .image img {
     display: block;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
     mix-blend-mode: multiply;
     opacity: 0.75;
     width: 100%;
@@ -50,23 +47,23 @@ body {
 }
 
 .image img, .text-content {
-    max-width: 450px;
+    max-width: 28.125em;
 }
 
 .text-content {
     background-color: var(--cardBg);   
-    border-radius: 0 0 10px 10px; 
+    border-radius: 0 0 0.6rem 0.6rem; 
     line-height: 1.5;
     letter-spacing: 0.6px;
     text-align: center;
-    padding: 0 4.2rem;
     font-family: 'Inter', sans-serif;    
 }
 
 .text-area h1 {
-    margin-top: 1.2em;
-    font-size: 2.7rem;
+    font-size: 1.7rem;
     font-weight: 700;
+    margin: 2.5rem 0 .9rem 0;
+    padding: 0 2.5rem;
 }
 
 .accent {
@@ -75,7 +72,7 @@ body {
 
 .main-p {
     color: var(--mainP);
-    margin-top: 1em;
+    padding: 0 1.7rem;
 }
 
 .main-p, .stats p {
@@ -87,61 +84,68 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2em;
+    gap: 1.7rem;
     text-transform: uppercase;
-    margin: 2em 0;
+    margin: 2rem 0;
+}
+
+.stats strong {
+    font-size: 1.2rem;
 }
 
 .stats p {
     color: var(--statH);
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 .attribution { 
-    font-size: 1.1rem; text-align: center; 
+    font-size: 1.1rem; 
+    text-align: center; 
 }
 
 .attribution a { 
     color: #3e52a3; 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 60.625em) {
     .container {
         flex-direction: row;
     }
 
     .image img, .text-content {
-        max-width: 540px;
+        max-width: 33.75em;
+    }
+
+    .image img {
+        height: 418px;
     }
 
     .image {
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 0.625rem 0.625rem 0px;
     }
 
     .text-content {
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 0.625em 0px 0px 0.625rem;
         display: flex;
         flex-direction: column;
         order: -1;
         text-align: left;
-        height: 446px;
-        /* padding-left: 5em; */
+        height: 27.875em;
     }  
 
     .text-area {        
-        margin: 4.5em 6em 4em 1em;
+        padding: 4rem 3rem 3rem 1rem;
     }
 
-    .text-content h1 {
-        font-size: 3.1rem;
+    .text-area h1 {
+        font-size: 2rem;
         margin-top: 0;
         margin-bottom: 1.2rem;
     }
 
     .main-p {
-        font-size: 1.2rem;
         line-height: 1.7;
-        margin-top: 1.8em;
+        padding: 0 0 0 2.5rem;
     }
 
     .stats-block {
@@ -150,6 +154,7 @@ body {
         justify-content: flex-start;
         gap: 5rem;
         width: 100%;
-        margin: 2em 0 0 1em;
+        margin: 0;
+        padding-left: 3.7rem;
     }
 }
